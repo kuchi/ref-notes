@@ -2,7 +2,7 @@
 
 ## Home
 
-- [ ] Sell some chickens
+- [ ] Sell some chickens: listed
   - Buff
   - Black & White
   - Maybe pecked welsummer
