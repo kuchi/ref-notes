@@ -19,4 +19,5 @@
 - %: split horiz
 - ':': Type command by name
   - split window:
+- o: switch to other pane
 - [: Turns on scrolling
