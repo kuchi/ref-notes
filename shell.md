@@ -6,6 +6,12 @@
 
 ## Bash / Zsh Scripting
 
+### ZSH multi move
+
+mmv is defined in my aliases.
+
+    mmv *.txt *.mk  # move all .txt to .md
+
 ### Referenes
 
 - [Zsh Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/) Good info on globbing
