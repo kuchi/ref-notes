@@ -24,3 +24,8 @@ directories that are platform specific.
 - [Configure](http://configure.readthedocs.org/en/latest/) Powerful yaml based
 config library. Looks useful. But not compatible with python 3 and seems inactive.
 - [layered-yaml-attrdict-config](https://pypi.python.org/pypi/layered-yaml-attrdict-config/) Seems active.
+
+
+## Misc
+
+- Turn off tracebacks: `sys.tracebacklimit=0`.
