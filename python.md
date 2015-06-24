@@ -25,6 +25,10 @@ directories that are platform specific.
 config library. Looks useful. But not compatible with python 3 and seems inactive.
 - [layered-yaml-attrdict-config](https://pypi.python.org/pypi/layered-yaml-attrdict-config/) Seems active.
 
+## Signal processing
+
+- [Periodograms Irregular Spaced Data Fourier](https://jakevdp.github.io/blog/2015/06/13/lomb-scargle-in-python/) For irregular spaced data, essentially fourier frequency analysis.
+
 
 ## Misc
 
