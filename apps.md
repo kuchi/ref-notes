@@ -8,6 +8,7 @@
 - CheatSheet: shows os x commands in current app (cask)
 - Spectacle: Window arrangement open source (cask)
 - Homebrew: package manager
+- [Karabiner](https://github.com/tekezo/Karabiner) Has VI key bindings for OS X.
 
 ## Windows
 - Chocolate: Windows package manager
