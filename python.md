@@ -7,6 +7,13 @@ Blender with python seems like best for visualization.
 - [Matplotlib Using moviepy](http://zulko.github.io/blog/2014/11/29/data-animations-with-python-and-moviepy/)
 - [Pyglet video of 3d](https://www.youtube.com/watch?v=LhZypHWNyVY)
 
+## Logging
+- [Excellent logging tips and setup](http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python)
+
+## Click command line interface
+- [common options](https://github.com/mitsuhiko/click/issues/108) Good example of doing common options
+
+
 
 ## Utilities
 
