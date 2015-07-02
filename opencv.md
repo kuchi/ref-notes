@@ -1,5 +1,13 @@
 # OpenCV
 
+## OpenCV 3
+
+- [Install opencv3 w/python bindings brew](http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/) Seems like python bindings for default brew install not yet working but this post shows how to do it with brew manually.
+
+This command might work:
+
+    brew install opencv3 --with-contrib --with-tbb
+
 ## projectpoints projecting 3d to 2d augmented reality
 
 - [opencv tutorial pose estimation](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_calib3d/py_pose/py_pose.html) Draws axss & cube on image. Good.
