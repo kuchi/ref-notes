@@ -4,7 +4,11 @@
   - oh-my-zsh: makes zsh config easy
 
 
-## Bash / Zsh Scripting
+## Zsh Scripting
+
+### ZSH expansion & glob
+
+    man zshexpn  # Gives full expansion info
 
 ### ZSH multi move
 
@@ -19,9 +23,14 @@ mmv is defined in my aliases.
 
 ### Snippets
 
+- [great examples](http://zsh.sourceforge.net/Intro/intro_2.html)
+
 globbing
 
     ls **/*.txt       # Find txt at any depth
+    ls *.<000-999>    # Find all files with extensions between 000 and 999.
+    ls *.<-999>       # Same as above, shorter
+    ls *.<500->       # All file extensions 500 or greater
     ls -l *(.L-50)    # list file size less than 50 bytes (the . ignores directories)
     ls -l *(Lm+50)    # list file size larger/greater than 50 mb
     ls -l *(m1)       # list files modified exactly 1 day ago

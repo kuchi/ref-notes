@@ -7,6 +7,8 @@
 This command might work:
 
     brew install opencv3 --with-contrib --with-tbb
+    # Then it should tell you to run
+    echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
 
 ## projectpoints projecting 3d to 2d augmented reality
 
