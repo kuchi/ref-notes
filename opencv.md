@@ -5,9 +5,12 @@
 
 **Install OpenCV3:** This seems to work (default brew does not have python bindings but building this way does it). However, may just need to run last command on default brew install.
 
+    brew update
     brew install opencv3 --with-contrib --with-tbb
     # Then it should tell you to run
     echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
+    
+- [manual opencv3 install os x](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/)
 
 ## Aligning 2 images
 
@@ -26,6 +29,9 @@
 - You should do an undistored image using `undistort` to see if the calibration looks correct. If the chess board / image looks distorted you know something is wrong.
 
 - Get undistorted points with `undistortPoints` or an undistorted image with `undistort`. 
+
+- Calibration Tips
+	- [good notes here](https://mackiemathew.wordpress.com/tag/opencv/) 
 
 - Camera pose estimation from matching points
 	- [python matching with epipolar lines and essential matrix](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_calib3d/py_epipolar_geometry/py_epipolar_geometry.html#epipolar-geometry) great example
@@ -60,3 +66,13 @@
 
 ## Rigid body transformation
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform): TODO: See how this compares to my implementation.
+
+## Finding Fiducials / Markers
+
+- key point matching is probably the best way. This can be rotation and scale invariant.
+
+- [Python fiducial finding code](https://github.com/mattvenn/fiducial)
+- [Try ORB detector](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_orb/py_orb.html)
+- [Python feature detection tutorials](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_table_of_contents_feature2d/py_table_of_contents_feature2d.html)
+- [tips for finding markers](http://iplimage.com/blog/cv-img-tec-black-white-marker-detection/)
+- [comparison of feature discriptors](http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/)
