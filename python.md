@@ -1,5 +1,7 @@
 # Python
 
+- [Scipy 2015 talks](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gcpabmu61kKcToLz0FapmHu)
+
 ## Animation
 
 Blender with python seems like best for visualization.
@@ -40,3 +42,7 @@ config library. Looks useful. But not compatible with python 3 and seems inactiv
 ## Misc
 
 - Turn off tracebacks: `sys.tracebacklimit=0`.
+
+## Visualization Libraries
+- Vispy: Rapidly developing, looking good and plotting now there.
+- Bokeh: Substantially improved. May be able to make plot server to view the cines with data synced. They have a way to downsample large data sets from the server.
