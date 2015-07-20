@@ -14,4 +14,5 @@ Important notes
  the slash it will make the dir.
 
 Copy certain files
+    
     rsync -rvhn --include="*/" --include="**/*.png" --include="**/*.jpg" --exclude="**/*" Data /Volumes/ANTHONY-TD
