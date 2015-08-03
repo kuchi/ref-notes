@@ -70,9 +70,15 @@
 ## Finding Fiducials / Markers
 
 - key point matching is probably the best way. This can be rotation and scale invariant.
-
+- May be best to just pick the fiducially, then track. Track with [Camshift](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_video/py_meanshift/py_meanshift.html)
 - [Python fiducial finding code](https://github.com/mattvenn/fiducial)
 - [Try ORB detector](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_orb/py_orb.html)
 - [Python feature detection tutorials](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_table_of_contents_feature2d/py_table_of_contents_feature2d.html)
 - [tips for finding markers](http://iplimage.com/blog/cv-img-tec-black-white-marker-detection/)
 - [comparison of feature discriptors](http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/)
+
+## GUI
+
+You can have mouse picking, see this example (may need to change key it checks for):
+-[OpenCV python mouse click coord](https://github.com/abidrahmank/OpenCV-Python/blob/master/Other_Examples/mouse_callback.py)
+-[OpenCV select & move points](https://ajithsrikukan.wordpress.com/2011/09/20/select-and-move-objectspoints-using-opencv-drag-and-drop/)
