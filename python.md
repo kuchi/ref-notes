@@ -1,6 +1,9 @@
 # Python
 
 - [Scipy 2015 talks](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gcpabmu61kKcToLz0FapmHu)
+- [ipython data science notebook examples](https://github.com/donnemartin/data-science-ipython-notebooks)
+- Curated Lists of Python Packages
+	- [Awesome-python list](https://github.com/vinta/awesome-python#other-awesome-lists) curated list of python packages
 
 ## Animation
 

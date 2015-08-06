@@ -8,7 +8,8 @@
 
 ### ZSH expansion & glob
 
-    man zshexpn  # Gives full expansion info
+	man zsh<tab>  # Will show all man sections
+	man zshexpn  # Gives full expansion info
 
 ### ZSH multi move
 
@@ -18,6 +19,7 @@ mmv is defined in my aliases.
 
 ### Referenes
 
+- [ZSH quick ref card](http://www.bash2zsh.com/zsh_refcard/refcard.pdf)
 - [Zsh Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/) Good info on globbing
 
 
@@ -62,3 +64,47 @@ Moving around
 
     cd    # Goes to Home
     cd -  # Goes to previous dir
+
+Modifiers
+
+	echo $f
+	README.md
+	echo $f:r
+	README
+
+
+	h
+	Remove a trailing pathname component, leaving the head.
+	r
+	Remove a trailing suffix of the form .xxx , leaving the basename.
+	e
+	Remove all but the suffix.
+	t
+	Remove all leading pathname components, leaving the tail.
+	&
+	Repeat the previous substitution.
+	g
+	Apply the change to the first occurrence of a match in each word, by prefixing the above (for example, g& ).
+	p
+	Print the new command but do not execute it.
+	q
+	Quote the substituted words, escaping further substitutions.
+	x
+	Like q , but break into words at each blank.
+	l
+	Convert the words to all lowercase.
+	u
+	Convert the words to all uppercase.
+	f
+	Repeats the immediately-following (without a colon) modifier until the resulting word doesn't change any more. This modifier and the following four only work with parameter and filename expansion.
+	F:expr:
+	Like f , but repeats only n times if the expression expr evaluates to n. Any character can be used instead of the : , with the exception that if ( , [ , or { is used as the opening delimiter, the closing delimiter must be ) , ] , or } respectively.
+	w
+	Makes the immediately-following modifier work on each word in the string.
+	W:sep:
+	Like w , but words are considered to be the parts of the string that are separated by sep. Delimiters are handled as in F above.
+	s/l/r[/]
+	Substitute r for l.
+	Unless preceded by a g , the substitution is done only for the first string that matches l.
+
+	The left-hand side of substitutions are not regular expressions, but character strings. Any character can be used as the delimiter in place of / . A backslash quotes the delimiter character. The character & , in the right-hand side, is replaced by the text from the left-hand side. The & can be quoted with a backslash. A null l uses the previous string either from a l or from a contextual scan string s from !?s . You can omit the rightmost delimiter if a newline immediately follows r; the rightmost ? in a context scan can similarly be omitted.
