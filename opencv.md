@@ -12,15 +12,15 @@
     
 - [manual opencv3 install os x](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/)
 
-## Aligning 2 images (Registration)
-
-- [Registration using Enhanced Correlation Coefficient (ECC) Maximization](http://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/) New in opencv 3. It will give you the affine matrix (2x3) or perspective matrix (3x3).
+## Aligning 2 images
 
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform) Takes two images and will give a rigid transform. Or takes two sets of points. **This seems good**.
 - [warpAffine](http://docs.opencv.org/modules/imgproc/doc/geometric_transformations.html) Then use this function to apply the transform. Could also use this to take out camera shake since it would also do rotation, would need to compare with my sub pixel method which only does translation.
 
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform) finds affine transform between points in two images.
 
+## Augmente Reality
+-[ARToolkit](http://www.artoolkit.org/)
 
 ## Camera Calibration
 
