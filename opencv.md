@@ -13,6 +13,7 @@
 - [manual opencv3 install os x](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/)
 
 ## Aligning 2 images
+- [image alignment findTransformECC opencv3](http://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/) great tutorial and good new algorithm 
 
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform) Takes two images and will give a rigid transform. Or takes two sets of points. **This seems good**.
 - [warpAffine](http://docs.opencv.org/modules/imgproc/doc/geometric_transformations.html) Then use this function to apply the transform. Could also use this to take out camera shake since it would also do rotation, would need to compare with my sub pixel method which only does translation.
@@ -84,3 +85,7 @@
 You can have mouse picking, see this example (may need to change key it checks for):
 -[OpenCV python mouse click coord](https://github.com/abidrahmank/OpenCV-Python/blob/master/Other_Examples/mouse_callback.py)
 -[OpenCV select & move points](https://ajithsrikukan.wordpress.com/2011/09/20/select-and-move-objectspoints-using-opencv-drag-and-drop/)
+
+## Sharpening
+
+-[detailEnhance OpenCV3](http://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/) Very nice sharpening.
