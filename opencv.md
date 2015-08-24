@@ -6,6 +6,7 @@
 **Install OpenCV3:** This seems to work (default brew does not have python bindings but building this way does it). However, may just need to run last command on default brew install.
 
     brew update
+    brew uninstall opencv
     brew install opencv3 --with-contrib --with-tbb
     # Then it should tell you to run
     echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
