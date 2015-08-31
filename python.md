@@ -12,8 +12,15 @@ Blender with python seems like best for visualization.
 - [Matplotlib Using moviepy](http://zulko.github.io/blog/2014/11/29/data-animations-with-python-and-moviepy/)
 - [Pyglet video of 3d](https://www.youtube.com/watch?v=LhZypHWNyVY)
 
+## Command processors
+For making a console like program with commands
+
+- [cmd python standard module](http://pymotw.com/2/cmd/)
+- [cmd3](http://cloudmesh.github.io/cmd3/) Improved version of cmd
+
 ## Logging
 - [Excellent logging tips and setup](http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python)
+- [Zen of logging](https://glenfant.wordpress.com/2012/12/22/the-zen-of-logging-and-yaml/)
 
 ## Click command line interface
 - [common options](https://github.com/mitsuhiko/click/issues/108) Good example of doing common options
@@ -49,3 +56,13 @@ config library. Looks useful. But not compatible with python 3 and seems inactiv
 ## Visualization Libraries
 - Vispy: Rapidly developing, looking good and plotting now there.
 - Bokeh: Substantially improved. May be able to make plot server to view the cines with data synced. They have a way to downsample large data sets from the server.
+
+
+## Web UI from command line scripts
+
+- [wooey](https://github.com/mfitzp/Wooey) Automated web ui from python scripts
+- [django-djangui](https://github.com/Chris7/django-djangui) Converst argparse script to browser ui
+
+## Yaml
+
+-[Layered yaml attrdict config](https://github.com/mk-fg/layered-yaml-attrdict-config)
