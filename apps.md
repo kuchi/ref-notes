@@ -11,6 +11,7 @@
 - CheatSheet: shows os x commands in current app (cask)
 - [Karabiner](https://github.com/tekezo/Karabiner) Has VI key bindings for OS X.
 - [Dash](https://kapeli.com/dash) Offline documentation (non free)
+- SiteSucker: save web sites (cask)
 
 
 ## Windows

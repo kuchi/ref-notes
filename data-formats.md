@@ -11,3 +11,5 @@
 # Proprietary formats
 - TDMS: National instruments waveform format. [npTDMSS Python reader](https://pypi.python.org/pypi/npTDMS/0.6.4)
 
+# Techtronics
+- [Python module to read .ISF binary files](https://github.com/Yunta/isfread-py?files=1)
