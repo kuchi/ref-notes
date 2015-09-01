@@ -52,6 +52,7 @@ config library. Looks useful. But not compatible with python 3 and seems inactiv
 ## Misc
 
 - Turn off tracebacks: `sys.tracebacklimit=0`.
+- Testing if an object is an iterable object (or other types of classes), use `isinstance(val, collections.Iterable)`. See [abstract base classes in collections](https://docs.python.org/2/library/collections.html#collections-abstract-base-classes).
 
 ## Visualization Libraries
 - Vispy: Rapidly developing, looking good and plotting now there.
