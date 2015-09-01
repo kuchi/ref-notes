@@ -2,11 +2,12 @@
 
 - [Python tutorials](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html)
 - [Python examples](https://github.com/Itseez/opencv/tree/master/samples/python2)
+- [Learn OpenCV blog](http://www.learnopencv.com) Excellent tutorials
 
 **Install OpenCV3:** This seems to work (default brew does not have python bindings but building this way does it). However, may just need to run last command on default brew install.
 
     brew update
-    brew install opencv3 --with-contrib --with-tbb
+    brew install opencv3 --with-contrib --with-tbb --with-qt
     # Then it should tell you to run
     echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
     
@@ -20,6 +21,11 @@
 - [warpAffine](http://docs.opencv.org/modules/imgproc/doc/geometric_transformations.html) Then use this function to apply the transform. Could also use this to take out camera shake since it would also do rotation, would need to compare with my sub pixel method which only does translation.
 
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform) finds affine transform between points in two images.
+
+
+## Color Maps
+
+- [Colormaps](http://www.learnopencv.com/applycolormap-for-pseudocoloring-in-opencv-c-python/) in opencv
 
 
 ## Camera Calibration
@@ -66,8 +72,7 @@
 - [ArUco](http://www.uco.es/investiga/grupos/ava/node/26) Augmented reality library with python bindings. Uses opencv.
 
 
-## Rigid body transformation
-- [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform): TODO: See how this compares to my implementation.
+
 
 ## Finding Fiducials / Markers
 
@@ -78,3 +83,14 @@
 - [Python feature detection tutorials](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_table_of_contents_feature2d/py_table_of_contents_feature2d.html)
 - [tips for finding markers](http://iplimage.com/blog/cv-img-tec-black-white-marker-detection/)
 - [comparison of feature discriptors](http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/)
+
+## Rigid body transformation
+- [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform): TODO: See how this compares to my implementation.
+
+## Sharpening images
+
+- (detailEnhance algorithm)[http://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/] Provides amazing results. Better than unsharp mask. `dst = cv2.detailEnhance(src, sigma_s=10, sigma_r=0.15)`
+
+## Tracking
+
+-[Blob detection](http://www.learnopencv.com/blob-detection-using-opencv-python-c/) Has a lot of nice filtering parameters for size, circularity, shape, inertia (elliptical vs circular), convexity
