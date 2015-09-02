@@ -2,13 +2,14 @@
 
 - [Python tutorials](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html)
 - [Python examples](https://github.com/Itseez/opencv/tree/master/samples/python2)
+- [Learn OpenCV blog](http://www.learnopencv.com) Excellent tutorials
 
 
 **Install OpenCV3:** This seems to work (default brew does not have python bindings but building this way does it). However, may just need to run last command on default brew install.
 
     brew update
     brew uninstall opencv
-    brew install opencv3 --with-contrib --with-tbb
+    brew install opencv3 --with-contrib --with-tbb --with-qt
     # Then it should tell you to run
     echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
     
@@ -25,6 +26,11 @@
 
 ## Augmente Reality
 -[ARToolkit](http://www.artoolkit.org/)
+
+## Color Maps
+
+- [Colormaps](http://www.learnopencv.com/applycolormap-for-pseudocoloring-in-opencv-c-python/) in opencv
+
 
 ## Camera Calibration
 
@@ -84,8 +90,7 @@ You can have mouse picking, see this example (may need to change key it checks f
 
 - To calculate, I think you just triangulate the points, then retroject back to a 2d point and find the difference from the original 2d point position. This would be the reprojection error.
 
-## Rigid body transformation
-- [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform): TODO: See how this compares to my implementation.
+
 
 ## Tracking  / Finding Objects  / Optical Flow
 
@@ -102,6 +107,18 @@ You can have mouse picking, see this example (may need to change key it checks f
 - [tips for finding markers](http://iplimage.com/blog/cv-img-tec-black-white-marker-detection/)
 - [comparison of feature discriptors](http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/)
 
+<<<<<<< HEAD
+## Rigid body transformation
+- [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform): TODO: See how this compares to my implementation.
+
+## Sharpening images
+
+- (detailEnhance algorithm)[http://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/] Provides amazing results. Better than unsharp mask. `dst = cv2.detailEnhance(src, sigma_s=10, sigma_r=0.15)`
+
+## Tracking
+
+-[Blob detection](http://www.learnopencv.com/blob-detection-using-opencv-python-c/) Has a lot of nice filtering parameters for size, circularity, shape, inertia (elliptical vs circular), convexity
+=======
 ### Optical Flow
 
 - [python optical flow tutorial](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_video/py_lucas_kanade/py_lucas_kanade.html)
@@ -111,3 +128,4 @@ You can have mouse picking, see this example (may need to change key it checks f
 ## Sharpening
 
 -[detailEnhance OpenCV3](http://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/) Very nice sharpening.
+>>>>>>> 60a6cc3dffe588323257487ad645b8981c6b91e3
