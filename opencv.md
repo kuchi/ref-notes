@@ -9,9 +9,7 @@
 
     brew update
     brew uninstall opencv
-    brew install opencv3 --with-contrib --with-tbb --with-qt
-    # Then it should tell you to run
-    echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
+    brew install opencv3 --with-contrib --with-ffmpeg --with-qt --with-tbb
     
 - [Conda opencv3 on binstar](https://binstar.org/search?q=opencv&sort=ndownloads) menlo package has it for all platforms.
 - [manual opencv3 install os x](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/)
