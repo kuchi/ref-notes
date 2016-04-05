@@ -6,6 +6,12 @@
 
 ## Zsh Scripting
 
+### Refresh commands
+
+To refresh tab completion for commands when there is a new command installed.
+
+	rehash
+
 ### ZSH expansion & glob
 
 	man zsh<tab>  # Will show all man sections

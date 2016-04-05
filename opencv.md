@@ -9,16 +9,14 @@
 
     brew update
     brew uninstall opencv
-    brew install opencv3 --with-contrib --with-tbb --with-qt
-    brew install opencv3 --HEAD --with-cuda --with-contrib --with-tbb --with-qt
-    # Then it should tell you to run
-    echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
-    
+    brew install opencv3 --with-contrib --with-ffmpeg --with-qt --with-tbb
+
+
 - [Conda opencv3 on binstar](https://binstar.org/search?q=opencv&sort=ndownloads) menlo package has it for all platforms.
 - [manual opencv3 install os x](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/)
 
 ## Aligning 2 images
-- [image alignment findTransformECC opencv3](http://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/) great tutorial and good new algorithm 
+- [image alignment findTransformECC opencv3](http://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/) great tutorial and good new algorithm
 
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform) Takes two images and will give a rigid transform. Or takes two sets of points. **This seems good**.
 - [warpAffine](http://docs.opencv.org/modules/imgproc/doc/geometric_transformations.html) Then use this function to apply the transform. Could also use this to take out camera shake since it would also do rotation, would need to compare with my sub pixel method which only does translation.
@@ -41,21 +39,21 @@
 
 - You should do an undistored image using `undistort` to see if the calibration looks correct. If the chess board / image looks distorted you know something is wrong.
 
-- Get undistorted points with `undistortPoints` or an undistorted image with `undistort`. 
+- Get undistorted points with `undistortPoints` or an undistorted image with `undistort`.
 
 - Calibration Tips
-	- [good notes here](https://mackiemathew.wordpress.com/tag/opencv/) 
+	- [good notes here](https://mackiemathew.wordpress.com/tag/opencv/)
 
 - Camera pose estimation from matching points
 	- [python matching with epipolar lines and essential matrix](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_calib3d/py_epipolar_geometry/py_epipolar_geometry.html#epipolar-geometry) great example
 	- [Python tutorial of matching that may be useful](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_matcher/py_matcher.html#matcher) and [this tutorial](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_feature_homography/py_feature_homography.html#feature-homography)
-	- [Python example of stereo matching](https://github.com/Itseez/opencv/blob/master/samples/python2/stereo_match.py) 
+	- [Python example of stereo matching](https://github.com/Itseez/opencv/blob/master/samples/python2/stereo_match.py)
 	- [SO discussion](http://stackoverflow.com/questions/8197107/opencv-camera-pose-estimation) Helpful links
 	- [opencv discussion](http://answers.opencv.org/question/8179/feature-points-stereo-matching/)
 	- [SO disussion](http://stackoverflow.com/questions/9026567/3d-reconstruction-from-2-images-without-info-about-the-camera)
 	- [SO discussion](http://stackoverflow.com/questions/12468426/opencv-uncalibrated-camera-rectification-for-3d-reconstruction)
 	- [8 point algorithm](https://books.google.com/books?id=J9b_CH-NrycC&pg=PA115&lpg=PA115&dq=normalized+eight+point+algorithm+python&source=bl&ots=BZ67VUeKss&sig=bqbScNgArZAeSK0Ycg28kDhls0U&hl=en&sa=X&ei=amuiVZT4OojsoATQ1Z7oAw&ved=0CCMQ6AEwAg#v=onepage&q=normalized%20eight%20point%20algorithm%20python&f=false) From Computer Vision with Python book
-	
+
 
 ## Contour Features
 
@@ -108,7 +106,7 @@ You can have mouse picking, see this example (may need to change key it checks f
 - [tips for finding markers](http://iplimage.com/blog/cv-img-tec-black-white-marker-detection/)
 - [comparison of feature discriptors](http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/)
 
-<<<<<<< HEAD
+
 ## Rigid body transformation
 - [estimateRigidTransform](http://docs.opencv.org/3.0-beta/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform): TODO: See how this compares to my implementation.
 
@@ -129,4 +127,3 @@ You can have mouse picking, see this example (may need to change key it checks f
 ## Sharpening
 
 -[detailEnhance OpenCV3](http://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/) Very nice sharpening.
->>>>>>> 60a6cc3dffe588323257487ad645b8981c6b91e3
