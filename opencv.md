@@ -10,6 +10,7 @@
     brew update
     brew uninstall opencv
     brew install opencv3 --with-contrib --with-tbb --with-qt
+    brew install opencv3 --HEAD --with-cuda --with-contrib --with-tbb --with-qt
     # Then it should tell you to run
     echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
     
